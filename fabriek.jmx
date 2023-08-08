@@ -1,0 +1,32 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Fabriek" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Roboto" staticFile="opt/fabriek.png" id="Fabriek" staticOptEnable="true">
+  <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040001443" v="04.00.01.443"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="Dieseltank: [Dieseltank]mv" id="0"/>
+   </MLTexts>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea1">
+   <wgtStyle width="131.50" x="0.31" y="673" fill="rgb(160,160,164)" dx="1" cx="64.74" form="gesture" dy="-1" cy="62.75" height="128" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="mainpage.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="bldgImg41">
+   <wgtStyle width="32" imagePath="images/7-5.svg" x="13" forcePaint="1" y="756" cx="15.45" cy="15.41" height="32"/>
+  </object>
+  <object class="GroupSubscribeWgt" id="Fabriek@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="LabelWgt" id="label1" static="true">
+   <wgtStyle width="467" font-color="rgb(23,30,40)" x="308" font-sizepx="29" y="122" font-family="Roboto" wrapping="true" cx="216.41" cy="22.74" height="48" vert-align="top" marker="true" keypad-type="None" font-size="22"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+ </object>
+</wgtPage>

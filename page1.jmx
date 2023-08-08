@@ -1,0 +1,20 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Page1" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Roboto" staticFile="opt/page1.png" id="Page1" staticOptEnable="true">
+  <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040000100" v="04.00.00.100"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="Calor" id="0"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="label1" static="true">
+   <wgtStyle width="173" font-color="rgb(23,30,40)" x="573.88" font-sizepx="42" y="116.88" font-family="Roboto" wrapping="true" cx="80.17" cy="46.89" height="99" vert-align="top" marker="true" keypad-type="None" font-size="32"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+ </object>
+</wgtPage>

@@ -1,0 +1,294 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Convector" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Roboto" staticFile="opt/convector.png" id="Convector" staticOptEnable="true">
+  <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040001443" v="04.00.01.443"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" id="3"/>
+    <MLText L1="Bronpomptemperatuur [tmpBronpomp|format(&quot;##.##&quot;)]°C&#xa;Buitentemperatuur [BuitenTempDec|format(&quot;##.##&quot;)]°C&#xa;Regime: [RegimeConvX]&#xa;Ruimte temperatuur: [ActRuimteTemp|format(&quot;##.##&quot;)]°C&#xa;Setpunt ruimte: [ActSetpunt|format(&quot;##.##&quot;)]°C&#xa;H2Oin:    [ActH2OinTemp|format(&quot;##.##&quot;)]°C&#xa;H2Ouit:   [ActH2OuitTemp|format(&quot;##.##&quot;)]°C&#xa;Luchtuit: [ActAirTemp|format(&quot;##.##&quot;)]°C&#xa;" id="0"/>
+    <MLText L1="Buitenlucht" id="1"/>
+    <MLText L1="Binnenlucht" id="2"/>
+    <MLText L1="Geen flow" id="4"/>
+    <MLText L1="Convector [GetoondeConvector]: [convNaam]" id="6"/>
+    <MLText L1="Kies Convector" id="8"/>
+    <MLText L1="Flow ok" id="9"/>
+    <MLText L1="Open" id="16"/>
+    <MLText L1="Gesloten" id="17"/>
+    <MLText L1="Waterflow:" id="18"/>
+    <MLText L1="Waterklep:" id="19"/>
+    <MLText L1="Luchtklep:" id="20"/>
+    <MLText L1="Toerental:&#xa;" id="21"/>
+    <MLText L1="Wens temp kachel " id="26"/>
+    <MLText L1="°C" id="27"/>
+    <MLText L1="Aanvoer systeem [ww3|format(&quot;##.##&quot;)]°C" id="40"/>
+    <MLText L1="‰ " id="71"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="label29">
+   <wgtStyle width="600" font-color="rgb(23,30,40)" x="489.26" forcePaint="16" font-sizepx="32" y="92.37" enableLiveTags="true" font-family="Roboto" wrapping="true" cx="278.05" cy="216.19" wgtStaticOpt="dynamic" height="456.44" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label11" static="true">
+   <wgtStyle width="158" font-color="rgb(23,30,40)" x="59.01" font-sizepx="32" y="92.40" font-family="Roboto" wrapping="true" cx="73.21" cy="24.64" height="52.01" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <links>
+    <lang class="MLTextLink" textid="21"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field6">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="32" cx="33.58" showThousandSeparator="false" cy="21.60" step="1" timeSpec="local" alignment="right" x="224.01" y="94.62" vert-align="top" text="1000" max="10000" usingFormat="" value="1000" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="73" numberFormat="1" readWrite="true" height="48" form="Numeric" font-size="24"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="aoVentRpm" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label12" static="true">
+   <wgtStyle width="31" font-color="rgb(23,30,40)" x="305.01" font-sizepx="32" y="94.39" font-family="Roboto" wrapping="true" cx="14.37" cy="22.74" height="48" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <links>
+    <lang class="MLTextLink" textid="71"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle font-bold="true" marker="true" forcePaint="16" font-family="Roboto" font-sizepx="32" cx="445.21" cy="19.89" x="59.01" y="11.21" wgtStaticOpt="dynamic" vert-align="top" keypad-type="None" enableLiveTags="true" font-color="rgb(23,30,40)" width="960.75" wrapping="true" font-underline="true" height="42" font-size="24"/>
+   <links>
+    <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label2" static="true">
+   <wgtStyle width="158" font-color="rgb(23,30,40)" x="59.01" font-sizepx="32" y="161.72" font-family="Roboto" wrapping="true" cx="73.21" cy="24.64" height="52.01" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <links>
+    <lang class="MLTextLink" textid="20"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label3" static="true">
+   <wgtStyle width="158" font-color="rgb(23,30,40)" x="59.01" font-sizepx="32" y="231.06" font-family="Roboto" wrapping="true" cx="73.21" cy="24.64" height="52.01" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <links>
+    <lang class="MLTextLink" textid="19"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label4" static="true">
+   <wgtStyle width="158" font-color="rgb(23,30,40)" x="59.01" font-sizepx="32" y="300.38" font-family="Roboto" wrapping="true" cx="73.21" cy="24.64" height="52.01" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <links>
+    <lang class="MLTextLink" textid="18"/>
+   </links>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea1">
+   <wgtStyle width="131.50" x="2" y="670" fill="rgb(160,160,164)" dx="1" cx="64.74" form="gesture" dy="-1" cy="62.75" height="128" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="mainpage.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="bldgImg41">
+   <wgtStyle width="32" imagePath="images/7-5.svg" x="13" forcePaint="1" y="756" cx="15.45" cy="15.41" height="32"/>
+  </object>
+  <object class="GroupSubscribeWgt" id="Convector@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="ImageWgt" id="image1" static="true">
+   <wgtStyle width="262" imagePath="images/vloerplan Munerica3.png" x="189.44" y="662.21" cx="131" cy="62.44" height="124.88"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea2">
+   <wgtStyle width="302.75" x="166.60" y="660.64" fill="rgb(160,160,164)" dx="1" cx="149.05" form="gesture" dy="-1" cy="62.75" height="128" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="kantoor.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field1">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="32" cx="9.20" showThousandSeparator="false" cy="16.15" step="1" timeSpec="local" alignment="right" x="1148.08" y="74.57" vert-align="top" text="9" max="8" usingFormat="" value="9" keypad-type="Numeric" font-color="rgb(23,30,40)" min="1" width="20" numberFormat="1" readWrite="true" height="35.88" form="Numeric" font-size="24"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="GetoondeConvector" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="BtnSimple1" customType="Button">
+   <wgtStyle width="54" x="1076.70" forcePaint="1" y="48.53" cx="27" cy="22" height="44"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnSimple1.frmImg" static="true">
+    <wgtStyle width="75" imagePath="images/frame_rect_chrome.svg" enableCache="true" x="-10" y="-9" visibility="false" bdrImageSize="71.00,58.00" cx="37.06" cy="31.12" bdrSize="0.19,0.18,0.17,0.17" height="62" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:oldwin; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnSimple1.btn">
+    <wgtStyle width="54" x="0" forcePaint="1" y="0" bdrImageSize="51.00,41.00" fill="rgb(120,120,120)" cx="26.47" form="standard" cy="21.46" height="44" releasePath="images\bu_oldwin_rect_1_rev1.svg" needlePath="images\bu_oldwin_rect_2_rev2.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+    <links>
+     <action StepOverLimit="true" class="StepTagAction" attribute="onMouseClick" event="onMouseClick" actionID="0" Step="1" StepLimit="8" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="int" attribute="tagSrc" tag="GetoondeConvector" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnSimple1.lbl" static="true">
+    <wgtStyle width="48" x="2" font-sizepx="13" y="-1" font-family="Roboto" wrapping="true" cx="24.35" cy="21.46" height="42" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="3"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="BtnSimple1.icoImg" static="true">
+    <wgtStyle width="29" enableCache="true" x="11" y="8" cx="14.82" cy="12.88" height="26"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnSimple2" customType="Button">
+   <wgtStyle width="54" x="1076.70" forcePaint="1" y="105.76" cx="27" cy="22" height="44"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnSimple2.frmImg" static="true">
+    <wgtStyle width="75" imagePath="images/frame_rect_chrome.svg" enableCache="true" x="-10" y="-9" visibility="false" bdrImageSize="71.00,58.00" cx="37.06" cy="31.12" bdrSize="0.19,0.18,0.17,0.17" height="62" bdrEdges="0.14,0.16,0.14,0.14"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:oldwin; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnSimple2.btn">
+    <wgtStyle width="54" x="0" forcePaint="1" y="0" bdrImageSize="51.00,41.00" fill="rgb(120,120,120)" cx="26.47" form="standard" cy="21.46" height="44" releasePath="images\bu_oldwin_rect_1_rev1.svg" needlePath="images\bu_oldwin_rect_2_rev2.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+    <links>
+     <action StepOverLimit="true" class="StepTagAction" attribute="onMouseClick" event="onMouseClick" actionID="1" Step="-1" StepLimit="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="int" attribute="tagSrc" tag="GetoondeConvector" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnSimple2.lbl" static="true">
+    <wgtStyle width="48" x="2" font-sizepx="13" y="-1" font-family="Roboto" wrapping="true" cx="24.35" cy="21.46" height="42" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="3"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="BtnSimple2.icoImg" static="true">
+    <wgtStyle width="29" enableCache="true" x="11" y="8" cx="14.82" cy="12.88" height="26"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label6">
+   <wgtStyle width="255" font-color="rgb(23,30,40)" x="1055.44" forcePaint="1" font-sizepx="32" y="3.93" font-family="Roboto" wrapping="true" cx="118.17" cy="32.83" height="69.31" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <links>
+    <lang class="MLTextLink" textid="8"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="arrwImg18">
+   <wgtStyle width="32" imagePath="images/nocrescentarrow.svg" x="1090.70" forcePaint="1" y="112.65" fill="rgb(255,255,0)" cx="16" cy="16" height="32" mtx="0,1,0,-1,0,0,32,0,1"/>
+  </object>
+  <object class="ImageWgt" id="arrwImg1">
+   <wgtStyle width="32" imagePath="images/nocrescentarrow.svg" x="1089.70" forcePaint="1" y="52.65" fill="rgb(255,255,0)" cx="16" cy="16" height="32" mtx="0,-1,0,1,0,0,0,32,1"/>
+  </object>
+  <object class="LabelWgt" id="label7">
+   <wgtStyle width="171" font-color="rgb(23,30,40)" x="220.23" forcePaint="8" font-sizepx="32" y="303.46" font-family="Roboto" wrapping="true" cx="79.24" cy="21.79" height="46" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <dataLinks>
+    <dataLink attribute="visibility" sourceType="Formula">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" expression="$Not($('ctFlow'))" compiledExpression="(!$0)" name="Formula">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="$0" tag="ctFlow" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="4"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label8">
+   <wgtStyle width="171" font-color="rgb(23,30,40)" x="220.23" forcePaint="9" font-sizepx="32" y="303.46" font-family="Roboto" wrapping="true" cx="79.24" cy="21.79" height="46" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="ctFlow" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="9"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label9">
+   <wgtStyle width="171" font-color="rgb(23,30,40)" x="224.01" forcePaint="8" font-sizepx="32" y="161.70" font-family="Roboto" wrapping="true" cx="79.24" cy="21.79" height="46" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="hrKlep" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label10">
+   <wgtStyle width="171" font-color="rgb(23,30,40)" x="224.26" forcePaint="9" font-sizepx="32" y="163.27" font-family="Roboto" wrapping="true" cx="79.24" cy="21.79" height="46" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <dataLinks>
+    <dataLink attribute="visibility" sourceType="Formula">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" expression="$Not($('hrKlep'))" compiledExpression="(!$0)" name="Formula">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="$0" tag="hrKlep" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="2"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label13">
+   <wgtStyle width="171" font-color="rgb(23,30,40)" x="224.01" forcePaint="8" font-sizepx="32" y="234.03" font-family="Roboto" wrapping="true" cx="79.24" cy="21.79" height="46" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="hrValve" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="16"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label14">
+   <wgtStyle width="171" font-color="rgb(23,30,40)" x="224.01" forcePaint="9" font-sizepx="32" y="233.03" font-family="Roboto" wrapping="true" cx="79.24" cy="21.79" height="46" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <dataLinks>
+    <dataLink attribute="visibility" sourceType="Formula">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" expression="$Not($('hrValve'))" compiledExpression="(!$0)" name="Formula">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="$0" tag="hrValve" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+   <links>
+    <lang class="MLTextLink" textid="17"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="image2" static="true">
+   <wgtStyle width="210" imagePath="images/Munerica2 manual.png" x="505.26" y="664.27" cx="105" cy="65" height="130"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea10">
+   <wgtStyle width="214" x="497.26" y="664.26" fill="rgb(160,160,164)" dx="1" cx="105.36" form="gesture" dy="-1" cy="63.74" height="130.02" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="munerica.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label33">
+   <wgtStyle width="184" font-color="rgb(23,30,40)" x="744.02" forcePaint="16" font-sizepx="21" y="711.57" enableLiveTags="true" font-family="Roboto" wrapping="true" cx="85.27" cy="13.26" wgtStaticOpt="dynamic" height="28" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="26"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label34">
+   <wgtStyle width="532" font-color="rgb(23,30,40)" x="744.02" forcePaint="16" font-sizepx="21" y="751.96" enableLiveTags="true" font-family="Roboto" wrapping="true" cx="246.54" cy="14.32" wgtStaticOpt="dynamic" height="30.23" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="40"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field11">
+   <wgtStyle forcePaint="9" font-family="Roboto" font-sizepx="21" cx="23" showThousandSeparator="false" cy="11.44" step="1" timeSpec="local" alignment="right" x="902.45" y="711.57" vert-align="top" text="20" max="50" usingFormat="" value="20" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="50" numberFormat="1" readWrite="true" height="25.42" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="SollKachel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label38" static="true">
+   <wgtStyle width="41" font-color="rgb(23,30,40)" x="960.27" font-sizepx="21" y="711.57" font-family="Roboto" wrapping="true" cx="19" cy="9" height="19" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="27"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="atoImg54">
+   <wgtStyle width="59" imagePath="images/ic_au1_054.svg" x="1207.61" forcePaint="1" y="711.98" cx="29.50" cy="26.50" height="53"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea11">
+   <wgtStyle width="118.58" x="1183.06" forcePaint="1" y="694.77" fill="rgb(160,160,164)" dx="1" cx="58.38" form="gesture" dy="-1" cy="49.02" height="100" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="munsettings.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+ </object>
+</wgtPage>

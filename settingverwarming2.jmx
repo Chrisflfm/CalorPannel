@@ -1,0 +1,477 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="SettingVerwarming2" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Roboto" staticFile="opt/settingverwarming2.png" id="SettingVerwarming2" staticOptEnable="true">
+  <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040001443" v="04.00.01.443"/>
+  <object class="ShapeWgt" id="rect1" static="true">
+   <wgtStyle width="312" x="39.58" y="77.80" fill="rgb(220,220,220)" cx="150.97" cy="68.29" nodeName="rect" height="136.57"/>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="Lage temperatuur kachel:" id="3"/>
+    <MLText L1="Wens Temp R3.11 dag warm:" id="4"/>
+    <MLText L1="Wens Temp R3.11 nacht warm:" id="5"/>
+    <MLText L1="Hoge temperatuur kachel" id="6"/>
+    <MLText L1="Wens Temp R3.11 dag koelen:" id="7"/>
+    <MLText L1="Hysteresisch heaters:" id="9"/>
+    <MLText L1="Wens Temp R2.X dag warm:" id="10"/>
+    <MLText L1="Wens Temp R2.X nacht warm:" id="11"/>
+    <MLText L1="Hysteresisch radiatoren:" id="12"/>
+    <MLText L1="Wens Temp R3.11 nacht koelen:" id="13"/>
+    <MLText L1="Wens Temp R6.0 dag warm:" id="14"/>
+    <MLText L1="Wens Temp R6.0 nacht warm:" id="15"/>
+    <MLText L1="Wens Temp R6.0 dag koelen:" id="16"/>
+    <MLText L1="Wens Temp R3.11 vorstvrij:" id="17"/>
+    <MLText L1="Wens Temp R6.0 vorstvrij:" id="18"/>
+    <MLText L1="Wens Temp R5.0 dag warm:" id="19"/>
+    <MLText L1="Wens Temp R5.0 nacht warm:" id="20"/>
+    <MLText L1="Wens Temp R5.0 dag koelen:" id="21"/>
+    <MLText L1="Wens Temp R5.0 nacht koelen:" id="22"/>
+    <MLText L1="Wens Temp R5.0 vorstvrij:" id="23"/>
+    <MLText L1="Wens Temp R3.0 dag warm:" id="24"/>
+    <MLText L1="Wens Temp R3.0 nacht warm:" id="25"/>
+    <MLText L1="Wens Temp R3.0 dag koelen:" id="26"/>
+    <MLText L1="Wens Temp R3.0 nacht koelen:" id="27"/>
+    <MLText L1="Wens Temp R3.0 vorstvrij:" id="28"/>
+    <MLText L1="Hysteresisch vloerverwarming:" id="30"/>
+    <MLText L1="Wens Temp R2.X dag koelen:" id="31"/>
+    <MLText L1="Wens Temp R2.X nacht koelen:" id="32"/>
+    <MLText L1="Wens Temp R2.X vorstvrij:" id="33"/>
+    <MLText L1="Wens Temp R6.0 nacht koelen:" id="34"/>
+    <MLText L1="Instellingen temperatuur regeling" id="35"/>
+    <MLText L1="Temperatuur instellingen ruimtes" id="39"/>
+   </MLTexts>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea5">
+   <wgtStyle width="82" x="0.19" y="719.50" fill="rgb(160,160,164)" dx="1" cx="40.37" form="gesture" dy="-1" cy="39.95" height="81.50" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="mainpage.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="bldgImg41">
+   <wgtStyle width="32" imagePath="images/7-5.svg" x="13" forcePaint="1" y="744.25" cx="15.45" cy="15.41" height="32"/>
+  </object>
+  <object class="LabelWgt" id="label2" static="true">
+   <wgtStyle width="231.71" font-color="rgb(23,30,40)" x="50.58" font-sizepx="16" y="86.80" font-family="Roboto" wrapping="true" cx="107.38" cy="9.30" height="19.64" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="19"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field1">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="283.58" y="86.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="50" numberFormat="1" readWrite="true" height="20" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR50dagV" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label3" static="true">
+   <wgtStyle width="231.49" font-color="rgb(23,30,40)" x="50.58" font-sizepx="16" y="158.80" font-family="Roboto" wrapping="true" cx="107.28" cy="8.71" height="18.40" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="22"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field2">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="283.58" y="158.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="50" numberFormat="1" readWrite="true" height="20" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR50nachtK" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label4" static="true">
+   <wgtStyle width="230.65" font-color="rgb(23,30,40)" x="50.58" font-sizepx="16" y="134.80" font-family="Roboto" wrapping="true" cx="106.89" cy="9.13" height="19.28" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="21"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field3">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="284.58" y="134.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="50" numberFormat="1" readWrite="true" height="20" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR50dagK" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label5" static="true">
+   <wgtStyle width="231.49" font-color="rgb(23,30,40)" x="50.58" font-sizepx="16" y="111.80" font-family="Roboto" wrapping="true" cx="107.28" cy="8.55" height="18.06" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="20"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field4">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="284.58" y="111.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="50" numberFormat="1" readWrite="true" height="20" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR50nachtV" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label6" static="true">
+   <wgtStyle width="231.49" font-color="rgb(23,30,40)" x="50.58" font-sizepx="16" y="181.80" font-family="Roboto" wrapping="true" cx="107.28" cy="8.71" height="18.40" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="23"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field5">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="285.58" y="181.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="50" numberFormat="1" readWrite="true" height="20" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR50vorstV" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="rect2" static="true">
+   <wgtStyle width="312" x="39.58" y="215.80" fill="rgb(220,220,220)" cx="150.97" cy="68.29" nodeName="rect" height="136.57"/>
+  </object>
+  <object class="LabelWgt" id="label7" static="true">
+   <wgtStyle width="231.71" font-color="rgb(23,30,40)" x="52.58" font-sizepx="16" y="224.80" font-family="Roboto" wrapping="true" cx="107.38" cy="9.30" height="19.64" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="14"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field6">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="285.58" y="225.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="50" numberFormat="1" readWrite="true" height="20" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR60dagV" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label8" static="true">
+   <wgtStyle width="231.49" font-color="rgb(23,30,40)" x="52.58" font-sizepx="16" y="296.80" font-family="Roboto" wrapping="true" cx="107.28" cy="8.71" height="18.40" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="34"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field7">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="285.58" y="296.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="50" numberFormat="1" readWrite="true" height="20" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR60nachtK" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label9" static="true">
+   <wgtStyle width="230.65" font-color="rgb(23,30,40)" x="52.58" font-sizepx="16" y="272.80" font-family="Roboto" wrapping="true" cx="106.89" cy="9.13" height="19.28" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="16"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field8">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="286.58" y="272.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="50" numberFormat="1" readWrite="true" height="20" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR60dagK" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label10" static="true">
+   <wgtStyle width="231.49" font-color="rgb(23,30,40)" x="52.58" font-sizepx="16" y="249.80" font-family="Roboto" wrapping="true" cx="107.28" cy="8.55" height="18.06" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="15"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field9">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="286.58" y="249.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="50" numberFormat="1" readWrite="true" height="20" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR60nachtV" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label11" static="true">
+   <wgtStyle width="231.49" font-color="rgb(23,30,40)" x="52.58" font-sizepx="16" y="319.80" font-family="Roboto" wrapping="true" cx="107.28" cy="8.71" height="18.40" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="18"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field10">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="286.58" y="319.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="50" numberFormat="1" readWrite="true" height="20" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR60vorstV" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="rect3" static="true">
+   <wgtStyle width="312" x="354.58" y="77.80" fill="rgb(220,220,220)" cx="150.97" cy="68.29" nodeName="rect" height="136.57"/>
+  </object>
+  <object class="LabelWgt" id="label12" static="true">
+   <wgtStyle width="229.74" font-color="rgb(23,30,40)" x="366.58" font-sizepx="16" y="86.80" font-family="Roboto" wrapping="true" cx="106.47" cy="9.30" height="19.64" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="24"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field11">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="602.58" y="86.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR30dagV" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label13" static="true">
+   <wgtStyle width="229.53" font-color="rgb(23,30,40)" x="366.58" font-sizepx="16" y="157.80" font-family="Roboto" wrapping="true" cx="106.37" cy="8.71" height="18.40" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="27"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field12">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="602.58" y="157.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR30nachtK" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label14" static="true">
+   <wgtStyle width="228.69" font-color="rgb(23,30,40)" x="366.58" font-sizepx="16" y="133.80" font-family="Roboto" wrapping="true" cx="105.98" cy="9.13" height="19.28" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="26"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field13">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="602.58" y="133.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR30dagK" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label15" static="true">
+   <wgtStyle width="229.53" font-color="rgb(23,30,40)" x="366.58" font-sizepx="16" y="110.80" font-family="Roboto" wrapping="true" cx="106.37" cy="8.55" height="18.06" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="25"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field14">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="602.58" y="110.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR30nachtV" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label16" static="true">
+   <wgtStyle width="229.53" font-color="rgb(23,30,40)" x="366.58" font-sizepx="16" y="181.80" font-family="Roboto" wrapping="true" cx="106.37" cy="8.71" height="18.40" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="28"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field15">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="603.58" y="181.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR30vorstV" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ShapeWgt" id="rect4" static="true">
+   <wgtStyle width="312" x="354.58" y="215.80" fill="rgb(220,220,220)" cx="150.97" cy="68.29" nodeName="rect" height="136.57"/>
+  </object>
+  <object class="LabelWgt" id="label17" static="true">
+   <wgtStyle width="229.74" font-color="rgb(23,30,40)" x="367.58" font-sizepx="16" y="224.80" font-family="Roboto" wrapping="true" cx="106.47" cy="9.30" height="19.64" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="4"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field16">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="603.58" y="224.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR31dagV" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label18" static="true">
+   <wgtStyle width="229.53" font-color="rgb(23,30,40)" x="367.58" font-sizepx="16" y="295.80" font-family="Roboto" wrapping="true" cx="106.37" cy="8.71" height="18.40" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="13"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field17">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="603.58" y="296.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR31nachtK" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label19" static="true">
+   <wgtStyle width="228.69" font-color="rgb(23,30,40)" x="367.58" font-sizepx="16" y="271.80" font-family="Roboto" wrapping="true" cx="105.98" cy="9.13" height="19.28" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="7"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field18">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="604.58" y="271.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR31dagK" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label20" static="true">
+   <wgtStyle width="229.53" font-color="rgb(23,30,40)" x="367.58" font-sizepx="16" y="248.80" font-family="Roboto" wrapping="true" cx="106.37" cy="8.55" height="18.06" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="5"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field19">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="604.58" y="249.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR31nachtV" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label21" static="true">
+   <wgtStyle width="229.53" font-color="rgb(23,30,40)" x="367.58" font-sizepx="16" y="318.80" font-family="Roboto" wrapping="true" cx="106.37" cy="8.71" height="18.40" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="17"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field110">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="605.58" y="319.80" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regSollTempR31vorstV" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label23" static="true">
+   <wgtStyle width="515.02" font-color="rgb(23,30,40)" x="39.58" font-sizepx="32" y="37.80" font-family="Roboto" wrapping="true" cx="238.66" cy="21.32" height="45" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <links>
+    <lang class="MLTextLink" textid="39"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="bldgImg12" static="true">
+   <wgtStyle width="48" imagePath="images/2-4.svg" x="103.03" y="742" cx="24" cy="18.25" height="36.50"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea6">
+   <wgtStyle width="93.50" x="81" forcePaint="1" y="719" fill="rgb(160,160,164)" dx="1" cx="46.03" form="gesture" dy="-1" cy="40.44" height="82.50" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="verwarming.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="0" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="offImg87" static="true">
+   <wgtStyle width="52.03" imagePath="images/ic_di1_087.svg" x="188.50" y="736.75" cx="26.02" cy="23.50" height="47"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea1">
+   <wgtStyle width="80" x="173" forcePaint="1" y="720.80" fill="rgb(160,160,164)" dx="1" cx="39.38" form="gesture" dy="-1" cy="38.68" height="78.90" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="settinguren.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ShapeWgt" id="rect5" static="true">
+   <wgtStyle width="312" x="672.92" y="80.06" fill="rgb(220,220,220)" cx="150.97" cy="68.29" nodeName="rect" height="136.57"/>
+  </object>
+  <object class="LabelWgt" id="label1" static="true">
+   <wgtStyle width="229.74" font-color="rgb(23,30,40)" x="685.92" font-sizepx="16" y="89.06" font-family="Roboto" wrapping="true" cx="106.47" cy="9.30" height="19.64" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="10"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field20">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="921.92" y="89.06" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="regSollTempR2xdagV" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label22" static="true">
+   <wgtStyle width="229.53" font-color="rgb(23,30,40)" x="685.92" font-sizepx="16" y="160.06" font-family="Roboto" wrapping="true" cx="106.37" cy="8.71" height="18.40" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="32"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field21">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="921.92" y="161.06" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="regSollTempR2xnachtK" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label24" static="true">
+   <wgtStyle width="228.69" font-color="rgb(23,30,40)" x="685.92" font-sizepx="16" y="136.06" font-family="Roboto" wrapping="true" cx="105.98" cy="9.13" height="19.28" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="31"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field22">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="922.92" y="136.06" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="regSollTempR2xdagK" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label25" static="true">
+   <wgtStyle width="229.53" font-color="rgb(23,30,40)" x="685.92" font-sizepx="16" y="113.06" font-family="Roboto" wrapping="true" cx="106.37" cy="8.55" height="18.06" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="11"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field23">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="922.92" y="114.06" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="regSollTempR2xnachtV" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label26" static="true">
+   <wgtStyle width="229.53" font-color="rgb(23,30,40)" x="685.92" font-sizepx="16" y="183.06" font-family="Roboto" wrapping="true" cx="106.37" cy="8.71" height="18.40" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="33"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field24">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="923.92" y="184.06" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="regSollTempR2xvorstV" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ImageWgt" id="plyrImg10" static="true">
+   <wgtStyle width="32" imagePath="images/ic_pl1_010.svg" x="1204" y="743" cx="16" cy="16" height="32"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea2">
+   <wgtStyle width="96.06" x="1183.02" y="720.75" fill="rgb(160,160,164)" dx="1" cx="47.28" form="gesture" dy="-1" cy="38.73" height="79" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="settingverwarming1.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="SettingVerwarming2@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="ImageWgt" id="bldgImg59">
+   <wgtStyle width="32" imagePath="images/10-2.svg" x="1239" forcePaint="1" y="743" cx="15.57" cy="16" height="32"/>
+  </object>
+  <object class="ShapeWgt" id="rect6" static="true">
+   <wgtStyle width="312" x="43.47" y="456" fill="rgb(220,220,220)" cx="150.97" cy="68.29" nodeName="rect" height="136.57"/>
+  </object>
+  <object class="LabelWgt" id="label27" static="true">
+   <wgtStyle width="229.74" font-color="rgb(23,30,40)" x="56.47" font-sizepx="16" y="465" font-family="Roboto" wrapping="true" cx="106.47" cy="9.30" height="19.64" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field25">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="292.47" y="465" vert-align="top" text="99999" max="50" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="25" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="reglaagTempKachel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label28" static="true">
+   <wgtStyle width="229.53" font-color="rgb(23,30,40)" x="56.47" font-sizepx="16" y="536" font-family="Roboto" wrapping="true" cx="106.37" cy="8.71" height="18.40" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field26">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="292.47" y="536.25" vert-align="top" text="99999" max="5" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="1" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regHystRad" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label29" static="true">
+   <wgtStyle width="228.69" font-color="rgb(23,30,40)" x="56.47" font-sizepx="16" y="512" font-family="Roboto" wrapping="true" cx="105.98" cy="9.13" height="19.28" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="9"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field27">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="292.47" y="512.50" vert-align="top" text="99999" max="5" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="1" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="float" attribute="value" tag="regHystHeater" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label30" static="true">
+   <wgtStyle width="229.53" font-color="rgb(23,30,40)" x="56.47" font-sizepx="16" y="489" font-family="Roboto" wrapping="true" cx="106.37" cy="8.55" height="18.06" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field28">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="292.47" y="488.75" vert-align="top" text="99999" max="85" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="30" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="reghoogTempKachel" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label31" static="true">
+   <wgtStyle width="229.53" font-color="rgb(23,30,40)" x="56.47" font-sizepx="16" y="559" font-family="Roboto" wrapping="true" cx="106.37" cy="8.71" height="18.40" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="30"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field29">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="23.93" showThousandSeparator="false" cy="9.01" step="1" timeSpec="local" alignment="right" x="292.47" y="560" vert-align="top" text="99999" max="5" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="1" width="52.02" numberFormat="1" readWrite="true" height="20.01" form="Numeric" font-size="12"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="regHystVV" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label32" static="true">
+   <wgtStyle width="515.02" font-color="rgb(23,30,40)" x="39.58" font-sizepx="32" y="417.47" font-family="Roboto" wrapping="true" cx="238.66" cy="21.32" height="45" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <links>
+    <lang class="MLTextLink" textid="35"/>
+   </links>
+  </object>
+ </object>
+</wgtPage>

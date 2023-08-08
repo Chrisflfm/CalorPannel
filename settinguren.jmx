@@ -1,0 +1,873 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="settinguren" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Roboto" staticFile="opt/settinguren.png" id="settinguren" staticOptEnable="true">
+  <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040001443" v="04.00.01.443"/>
+  <object class="ShapeWgt" id="rect2" static="true">
+   <wgtStyle width="253.24" x="147.27" y="598.01" fill="rgb(220,220,220)" cx="122.53" cy="48.62" nodeName="rect" height="97.24"/>
+  </object>
+  <object class="ShapeWgt" id="rect1" static="true">
+   <wgtStyle width="895" x="146" y="102" fill="rgb(220,220,220)" cx="433.06" cy="221" nodeName="rect" height="442"/>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="weekdagen" id="0"/>
+    <MLText L1="start dag 5.0" id="1"/>
+    <MLText L1="start dag 2.X" id="3"/>
+    <MLText L1="einde dag 2.X" id="4"/>
+    <MLText L1="einde dag 5.0&#xa;" id="5"/>
+    <MLText L1="start dag 6.0" id="6"/>
+    <MLText L1="einde dag 6.0&#xa;" id="7"/>
+    <MLText L1="start dag 3.0" id="8"/>
+    <MLText L1="einde dag 3.0&#xa;" id="9"/>
+    <MLText L1="start dag 3.1" id="10"/>
+    <MLText L1="einde dag 3.1&#xa;" id="11"/>
+    <MLText L1=":" id="12"/>
+    <MLText L1="zaterdag" id="13"/>
+    <MLText L1="zondag&#xa;" id="14"/>
+    <MLText L1="start dag 2.X" id="15"/>
+    <MLText L1="einde dag 2.X" id="16"/>
+    <MLText L1="start dag 2.X" id="17"/>
+    <MLText L1="einde dag 2.X" id="18"/>
+    <MLText L1="PLCtijd&#xa;" id="19"/>
+    <MLText L1="PLCdatum&#xa;" id="20"/>
+    <MLText L1="/" id="21"/>
+    <MLText L1="Tijd instelling PLC" id="22"/>
+    <MLText L1="Tijd instellingen ruimtes" id="56"/>
+   </MLTexts>
+  </object>
+  <object class="LabelWgt" id="label1" static="true">
+   <wgtStyle width="171.90" font-color="rgb(23,30,40)" x="153.52" font-sizepx="21" y="116.86" font-family="Roboto" wrapping="true" cx="79.66" cy="16.61" height="35.07" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label2" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="153.52" font-sizepx="21" y="154.32" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label3" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="153.52" font-sizepx="21" y="193.18" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="5"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label4" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="153.52" font-sizepx="21" y="232.05" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label5" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="153.52" font-sizepx="21" y="270.92" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="7"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label6" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="153.52" font-sizepx="21" y="309.78" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="8"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label7" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="153.52" font-sizepx="21" y="348.65" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="9"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label8" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="153.52" font-sizepx="21" y="387.51" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="10"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label9" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="153.52" font-sizepx="21" y="426.38" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="11"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label10" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="360.95" font-sizepx="21" y="154.32" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field1">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="335.05" y="154.32" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagStart50Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field2">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="375.24" y="154.32" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagStart50Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label11" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="360.95" font-sizepx="21" y="193.18" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field3">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="335.05" y="193.18" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagEind50Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field4">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="375.24" y="193.18" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagEind50Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label12" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="360.95" font-sizepx="21" y="232.05" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field5">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="335.05" y="232.05" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagStart60Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field6">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="375.24" y="232.05" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagStart60Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label13" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="360.95" font-sizepx="21" y="270.92" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field7">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="335.05" y="270.92" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagEind60Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field8">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="375.24" y="270.92" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagEind60Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label14" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="360.95" font-sizepx="21" y="309.78" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field9">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="335.05" y="309.78" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagStart30Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field10">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="375.24" y="309.78" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagStart30Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label15" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="360.95" font-sizepx="21" y="348.65" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field11">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="335.05" y="348.65" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagEind30Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field12">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="375.24" y="348.65" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagEind30Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label16" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="360.95" font-sizepx="21" y="387.51" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field13">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="335.05" y="387.51" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagStart31Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field14">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="375.24" y="387.51" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagStart31Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label17" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="360.95" font-sizepx="21" y="426.38" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field15">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="335.05" y="426.38" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagEind31Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field16">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="375.24" y="426.38" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagEind31Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ImageWgt" id="atoImg54" static="true">
+   <wgtStyle width="44" imagePath="images/ic_au1_054.svg" x="95.78" y="751" cx="22" cy="18.50" height="37"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea3">
+   <wgtStyle width="82.52" x="70.76" y="738.25" fill="rgb(160,160,164)" dx="1" cx="40.63" form="gesture" dy="-1" cy="30.64" height="62.50" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="settingverwarming1.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea5">
+   <wgtStyle width="68" x="0.16" y="737.75" fill="rgb(160,160,164)" dx="1" cx="33.48" form="gesture" dy="-1" cy="31.13" height="63.50" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="mainpage.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="bldgImg41">
+   <wgtStyle width="32" imagePath="images/7-5.svg" x="13" forcePaint="1" y="753.50" cx="15.45" cy="15.41" height="32"/>
+  </object>
+  <object class="LabelWgt" id="label18" static="true">
+   <wgtStyle width="171.90" font-color="rgb(23,30,40)" x="457.76" font-sizepx="21" y="116.86" font-family="Roboto" wrapping="true" cx="79.66" cy="16.61" height="35.07" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="13"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label19" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="457.76" font-sizepx="21" y="154.32" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label20" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="457.76" font-sizepx="21" y="193.18" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="5"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label21" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="457.76" font-sizepx="21" y="232.05" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label22" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="457.76" font-sizepx="21" y="270.92" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="7"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label23" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="457.76" font-sizepx="21" y="309.78" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="8"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label24" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="457.76" font-sizepx="21" y="348.65" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="9"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label25" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="457.76" font-sizepx="21" y="387.51" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="10"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label26" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="457.76" font-sizepx="21" y="426.38" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="11"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label180" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="665.19" font-sizepx="21" y="154.32" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field17">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="639.29" y="154.32" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagStart50Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field18">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="679.48" y="154.32" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagStart50Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label181" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="665.19" font-sizepx="21" y="193.18" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field19">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="639.29" y="193.18" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagEind50Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field20">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="679.48" y="193.18" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagEind50Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label182" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="665.19" font-sizepx="21" y="232.05" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field21">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="639.29" y="232.05" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagStart60Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field22">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="679.48" y="232.05" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagStart60Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label183" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="665.19" font-sizepx="21" y="270.92" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field23">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="639.29" y="270.92" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagEind60Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field24">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="679.48" y="270.92" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagEind60Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label184" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="665.19" font-sizepx="21" y="309.78" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field25">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="639.29" y="309.78" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagStart30Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field170">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="679.48" y="309.78" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagStart30Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label185" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="665.19" font-sizepx="21" y="348.65" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field171">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="639.29" y="348.65" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagEind30Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field172">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="679.48" y="348.65" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagEind30Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label186" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="665.19" font-sizepx="21" y="387.51" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field173">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="639.29" y="387.51" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagStart31Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field174">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="679.48" y="387.51" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagStart31Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label187" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="665.19" font-sizepx="21" y="426.38" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field175">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="639.29" y="426.38" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagEind31Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field176">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="679.48" y="426.38" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagEind31Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label27" static="true">
+   <wgtStyle width="171.90" font-color="rgb(23,30,40)" x="763.81" font-sizepx="21" y="116.86" font-family="Roboto" wrapping="true" cx="79.66" cy="16.61" height="35.07" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="14"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label28" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="763.81" font-sizepx="21" y="154.32" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label29" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="763.81" font-sizepx="21" y="193.18" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="5"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label30" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="763.81" font-sizepx="21" y="232.05" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label31" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="763.81" font-sizepx="21" y="270.92" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="7"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label32" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="763.81" font-sizepx="21" y="309.78" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="8"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label33" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="763.81" font-sizepx="21" y="348.65" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="9"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label34" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="763.81" font-sizepx="21" y="387.51" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="10"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label35" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="763.81" font-sizepx="21" y="426.38" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="11"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label270" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="971.24" font-sizepx="21" y="154.32" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field26">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="945.34" y="154.32" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagStart50Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field27">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="985.53" y="154.32" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagStart50Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label271" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="971.24" font-sizepx="21" y="193.18" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field28">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="945.34" y="193.18" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagEind50Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field29">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="985.53" y="193.18" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagEind50Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label272" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="971.24" font-sizepx="21" y="232.05" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field30">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="945.34" y="232.05" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagStart60Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field31">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="985.53" y="232.05" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagEind60Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label273" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="971.24" font-sizepx="21" y="270.92" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field32">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="945.34" y="270.92" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagEind60Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field33">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="985.53" y="270.92" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagEind60Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label274" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="971.24" font-sizepx="21" y="309.78" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field34">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="945.34" y="309.78" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagStart30Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field260">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="985.53" y="309.78" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagStart30Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label275" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="971.24" font-sizepx="21" y="348.65" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field261">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="945.34" y="348.65" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagEind30Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field262">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="985.53" y="348.65" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagEind30Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label276" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="971.24" font-sizepx="21" y="387.51" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field263">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="945.34" y="387.51" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagStart31Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field264">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="985.53" y="387.51" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagStart31Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label277" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="971.24" font-sizepx="21" y="426.38" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field265">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="945.34" y="426.38" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagEind31Uur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field266">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="985.53" y="426.38" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagEind31Min" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupSubscribeWgt" id="settinguren@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="LabelWgt" id="label36" static="true">
+   <wgtStyle width="515.02" font-color="rgb(23,30,40)" x="153.52" font-sizepx="32" y="47.57" font-family="Roboto" wrapping="true" cx="238.66" cy="21.32" height="45" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <links>
+    <lang class="MLTextLink" textid="56"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label37" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="153.53" font-sizepx="21" y="464.33" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label38" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="153.53" font-sizepx="21" y="503.20" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="4"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label39" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="360.96" font-sizepx="21" y="464.33" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field35">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="335.06" y="464.33" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagStart2xUur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field36">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="375.25" y="464.33" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagStart2xMin" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field37">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="375.25" y="503.20" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagEind2xMin" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label40" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="457.77" font-sizepx="21" y="464.33" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="15"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label41" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="457.77" font-sizepx="21" y="503.20" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="16"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label42" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="665.20" font-sizepx="21" y="464.33" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field38">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="639.30" y="464.33" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagStart2xUur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field39">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="679.49" y="464.33" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagEind2xMin" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label43" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="665.20" font-sizepx="21" y="503.20" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field40">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="639.30" y="503.20" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagEind2xUur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field41">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="679.49" y="503.20" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZaterdagDagEind2xMin" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label44" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="763.82" font-sizepx="21" y="464.33" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="17"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label45" static="true">
+   <wgtStyle width="173.19" font-color="rgb(23,30,40)" x="763.82" font-sizepx="21" y="503.20" font-family="Roboto" wrapping="true" cx="80.26" cy="17.28" height="36.48" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="18"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label46" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="971.25" font-sizepx="21" y="464.33" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field42">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="945.35" y="464.33" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagStart2xUur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field43">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="985.54" y="464.33" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagStart2xMin" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label47" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="971.25" font-sizepx="21" y="503.20" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field44">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="945.35" y="503.20" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagEind2xUur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field45">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="985.54" y="503.20" vert-align="top" text="19" max="2147483647" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="ZondagDagEind2xMin" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label48" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="361.42" font-sizepx="21" y="502.81" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field46">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="335.52" y="502.81" vert-align="top" text="19" max="24" usingFormat="" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="WeekDagEind2xUur" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label49" static="true">
+   <wgtStyle width="92.47" font-color="rgb(23,30,40)" x="151" font-sizepx="21" y="604.17" font-family="Roboto" wrapping="true" cx="42.85" cy="11.46" height="24.19" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="19"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field47">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="255" y="604.17" vert-align="top" text="19" max="2147483647" usingFormat="" leadingDigits="2" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="Hours" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label50" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="280" font-sizepx="21" y="604.17" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field48">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="289" y="604.17" vert-align="top" text="19" max="2147483647" usingFormat="" leadingDigits="2" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="Minutes" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label51" static="true">
+   <wgtStyle width="104.84" font-color="rgb(23,30,40)" x="149" font-sizepx="21" y="658.30" font-family="Roboto" wrapping="true" cx="48.58" cy="12.32" height="26" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="20"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field49">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="259" y="658.30" vert-align="top" text="19" max="2147483647" usingFormat="" leadingDigits="2" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="Day" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label52" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="289" font-sizepx="21" y="658.30" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="21"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field50">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="304" y="658.30" vert-align="top" text="19" max="2147483647" usingFormat="" leadingDigits="2" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="Month" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label53" static="true">
+   <wgtStyle width="10" font-color="rgb(23,30,40)" x="330.89" font-sizepx="21" y="658.30" font-family="Roboto" wrapping="true" cx="4.63" cy="17.50" height="36.94" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="21"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field51">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="11.50" showThousandSeparator="false" cy="10.77" step="1" timeSpec="local" alignment="right" x="349" y="658.30" vert-align="top" text="19" max="2147483647" usingFormat="" leadingDigits="2" value="19" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="25" numberFormat="1" readWrite="true" height="23.94" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="Year" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label54" static="true">
+   <wgtStyle width="515.02" font-color="rgb(23,30,40)" x="139.78" font-sizepx="32" y="550" font-family="Roboto" wrapping="true" cx="238.66" cy="21.32" height="45" vert-align="top" marker="true" keypad-type="None" font-size="24"/>
+   <links>
+    <lang class="MLTextLink" textid="22"/>
+   </links>
+  </object>
+ </object>
+</wgtPage>

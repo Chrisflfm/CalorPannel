@@ -1,0 +1,171 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="alarm" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Roboto" staticFile="opt/alarm.png" id="alarm" staticOptEnable="true">
+  <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040001443" v="04.00.01.443"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" id="11"/>
+    <MLText L1="Active Alarms" id="0"/>
+    <MLText L1="Action" id="1"/>
+    <MLText L1="Enable" id="2"/>
+    <MLText L1="Severity" id="3"/>
+    <MLText L1="Description" id="4"/>
+    <MLText L1="Time" id="5"/>
+    <MLText L1="Value" id="6"/>
+    <MLText L1="State" id="7"/>
+    <MLText L1="Groups" id="8"/>
+    <MLText L1="Name" id="9"/>
+    <MLText L1="Select" id="10"/>
+   </MLTexts>
+  </object>
+  <object class="ImageWgt" id="bldgImg41" static="true">
+   <wgtStyle width="32" imagePath="images/7-5.svg" x="13" y="756" cx="15.45" cy="15.41" height="32"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea">
+   <wgtStyle width="89.68" x="4" y="682.88" fill="rgb(160,160,164)" dx="1" cx="44.15" form="gesture" dy="-1" cy="55.88" height="114" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="mainpage.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="ActvAlrmLite" customType="Alarms List">
+   <wgtStyle width="992" x="114.50" y="55.81" cx="496" cy="282" height="564"/>
+   <object class="LabelWgt" id="ActvAlrmLite.lbl" static="true">
+    <wgtStyle width="515.54" font-color="rgb(40,40,40)" x="294.59" font-sizepx="16" y="0" font-family="Roboto" wrapping="true" cx="255.23" cy="9.45" height="65.81" alignment="center" vert-align="top" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="0"/>
+    </links>
+   </object>
+   <object class="TableWgt" id="ActvAlrmLite.tbl">
+    <wgtStyle width="992" x="0" forcePaint="8" font-sizepx="13" y="57.01" font-family="Roboto" showHeader="true" cx="50.39" datafont-sizepx="13" cy="14.60" filterCol="3" scroll_type="1" height="506.99" defaultSortCol="6" filterString="^((Not Triggered Acked|Not Triggered Not Acked|Triggered).*$)" scrollHeight="25"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="rowCount" tag="alarmCount" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+     <dataLink readWrite="R" attribute="fgColor" tag="FGColor" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+     <dataLink readWrite="R" attribute="bgColor" tag="BGColor" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+     <dataLink readWrite="R/W" attribute="selectionAttr" tag="alSelect" widgetType="Project" sourceType="Widget" tagIndex="-1" dataSource="_AlarmsMgr"/>
+    </dataLinks>
+    <table cols="10" rows="0">
+     <colInfo>
+      <col width="50" sizeToFit="false" stringList="" visibility="false" type="2" name="Select">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="10"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R/W" attribute="value" tag="alSelect" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+      <col width="700" sizeToFit="false" stringList="" visibility="true" type="0" name="Name">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="9"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R" attribute="value" tag="alName" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+      <col width="100" sizeToFit="false" stringList="" visibility="false" type="0" name="Groups">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="8"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R" attribute="value" tag="alGroups" widgetType="Project" sourceType="Widget" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+      <col width="148" sizeToFit="false" stringList="" visibility="false" type="0" name="State">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="7"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R" attribute="value" tag="alState" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+      <col width="200" sizeToFit="false" stringList="" visibility="true" numberformat="MM/DD/YYYY - hh:mm:ss AP" type="4" name="Time">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="5"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R" attribute="value" tag="alDateTime" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+      <col width="450" sizeToFit="false" stringList="" visibility="false" type="0" name="Description">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="4"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R" attribute="value" tag="alDescription" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+      <col width="80" sizeToFit="false" stringList="" visibility="false" type="0" name="Severity">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="3"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R/W" attribute="value" tag="alSeverity" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+      <col width="45" sizeToFit="false" stringList="" visibility="false" type="2" name="Enable">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="2"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R/W" attribute="value" tag="alEnable" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+      <col width="100" sizeToFit="false" stringList="" imagePath="images/action.png" visibility="false" type="5" name="Action">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="1"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R/W" attribute="value" tag="alUserAction" widgetType="Project" sourceType="Widget" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+      <col width="90" sizeToFit="false" stringList="" visibility="true" type="0" name="Value">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="6"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R" attribute="value" tag="alValue" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+     </colInfo>
+    </table>
+   </object>
+  </object>
+  <object class="ImageWgt" id="image2" static="true">
+   <wgtStyle width="150" imagePath="images/Platina klein.jpg" x="1127" y="719" cx="75" cy="37" height="74"/>
+  </object>
+  <object class="GroupWgt" id="LgtSmp1" customType="Light">
+   <wgtStyle width="20" x="321" y="752" cx="10" cy="10" height="20"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp1.frmImg" static="true">
+    <wgtStyle width="25.77" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-3.85" y="-3.08" visibility="false" cx="12.88" cy="13.27" height="26.54"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp1.ind">
+    <wgtStyle width="20" imagePath="images/li_shape_round.svg" x="0" y="0" cx="10" cy="10" bkgColor="rgb(255,255,255);rgb(255,0,0)" height="20" stroke="rgb(255,251,240)"/>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp1.lbl" static="true">
+    <wgtStyle width="16.92" x="1.15" font-sizepx="13" y="1.54" font-family="Roboto" cx="8.46" cy="8.65" height="17.31" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="11"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp1.icoImg" static="true">
+    <wgtStyle width="6.92" enableCache="true" x="5.38" y="5.38" cx="3.46" cy="4.04" height="8.08" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="alarm@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>

@@ -1,0 +1,167 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Onderhoud" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Roboto" staticFile="opt/onderhoud.png" id="Onderhoud" staticOptEnable="true">
+  <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040001443" v="04.00.01.443"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="Temp test&#xa;tmp30_1a:[tmp30_1a]&#xa;tmpBronpomp:[tmpBronpomp]&#xa;tmpB12Fles:[tmpB12Fles]&#xa;tmpAanvoerWW:[tmpAanvoerWW]&#xa;tmpAfvoerWW:[tmpAfvoerWW]&#xa;" id="0"/>
+    <MLText L1="Bassin level: [BassinLevl]" id="4"/>
+    <MLText L1="Simuleer Aqua error" id="5"/>
+    <MLText L1="Communication Status: [Protocol Communication Status:_SysPropMgr]&#xa;0 = No protocol running, protocol drivers might not have been properly downloaded to the HMI device.&#xa;1 = Protocols loaded and started, no communication error.&#xa;2 = At least one communication protocol is reporting an error." id="6"/>
+    <MLText L1="Dieseltank: [Dieseltank]mv&#xa;" id="7"/>
+   </MLTexts>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea1">
+   <wgtStyle width="131.50" x="0.31" y="673" fill="rgb(160,160,164)" dx="1" cx="64.74" form="gesture" dy="-1" cy="62.75" height="128" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="mainpage.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="bldgImg41">
+   <wgtStyle width="32" imagePath="images/7-5.svg" x="13" forcePaint="1" y="756" cx="15.45" cy="15.41" height="32"/>
+  </object>
+  <object class="LabelWgt" id="label2">
+   <wgtStyle width="753" font-color="rgb(23,30,40)" x="48.96" forcePaint="16" font-sizepx="16" y="28.31" enableLiveTags="true" font-family="Roboto" wrapping="true" cx="348.96" cy="48.31" wgtStaticOpt="dynamic" height="102" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="Onderhoud@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle width="753" font-color="rgb(23,30,40)" x="48.96" forcePaint="16" font-sizepx="16" y="145.84" enableLiveTags="true" font-family="Roboto" wrapping="true" cx="348.96" cy="85.73" wgtStaticOpt="dynamic" height="181" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label4">
+   <wgtStyle width="467" font-color="rgb(23,30,40)" x="112.69" forcePaint="17" font-sizepx="29" y="635.50" enableLiveTags="true" font-family="Roboto" wrapping="true" cx="216.41" cy="35.53" wgtStaticOpt="dynamic" height="75" vert-align="top" marker="true" keypad-type="None" font-size="22"/>
+   <links>
+    <lang class="MLTextLink" textid="7"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="tankbargphWgt3" customType="Tankbargraph">
+   <wgtStyle width="153" x="90.50" y="351.75" cx="188" cy="132" height="110" mtx="2.45752,0,0,0,2.4,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="align" alias="ScaleWgt1.align;LabelsWgt1.align;TicksWgt1.align"/>
+    <attr attrName="TicksWgt_stroke-width" alias="TicksWgt1.stroke-width"/>
+    <attr attrName="LabelsWgt_font-size" alias="LabelsWgt1.font-size"/>
+    <attr attrName="TicksWgt_strokeMajor" alias="TicksWgt1.strokeMajor"/>
+    <attr attrName="TicksWgt_tickSize" alias="TicksWgt1.tickSize"/>
+    <attr attrName="TicksWgt_frame" alias="TicksWgt1.frame"/>
+    <attr attrName="TicksWgt_tickFreq" alias="TicksWgt1.tickFreq"/>
+    <attr attrName="labelFreq" alias="TicksWgt1.labelFreq;LabelsWgt1.labelFreq"/>
+    <attr attrName="ScaleWgt_stroke" alias="ScaleWgt1.stroke"/>
+    <attr attrName="reverseScale" alias="BargraphWgt1.reverseScale;LabelsWgt1.reverseScale;ScaleWgt1.reverseScale;TicksWgt1.reverseScale"/>
+    <attr attrName="max" alias="BargraphWgt1.max;LabelsWgt1.max;ScaleWgt1.max"/>
+    <attr attrName="TicksWgt_tickSize2" alias="TicksWgt1.tickSize2"/>
+    <attr attrName="LabelsWgt_fill" alias="LabelsWgt1.fill"/>
+    <attr attrName="min" alias="BargraphWgt1.min;ScaleWgt1.min;LabelsWgt1.min"/>
+    <attr attrName="ScaleWgt_alarmMax" alias="ScaleWgt1.max"/>
+    <attr attrName="LabelsWgt_dataFormat" alias="LabelsWgt1.dataFormat"/>
+    <attr attrName="TicksWgt_strokeMinor" alias="TicksWgt1.strokeMinor"/>
+    <attr attrName="ScaleWgt_offset" alias="ScaleWgt1.offset"/>
+    <attr attrName="TicksWgt_minorStroke-width" alias="TicksWgt1.minorStroke-width"/>
+    <attr attrName="ScaleWgt_alarmMin" alias="ScaleWgt1.min"/>
+    <attr attrName="visibility2" alias="LabelsWgt1.visibility;ScaleWgt1.visibility;TicksWgt1.visibility"/>
+   </links>
+   <object class="ImageWgt" id="tankbargphWgt3.bgImg" static="true">
+    <wgtStyle width="153" imagePath="images/Tank04Meter_rev2.svg" x="0" y="20" fill="rgb(140,140,140)" cx="104.09" cy="74.44" height="90"/>
+   </object>
+   <object class="GroupWgt" id="tankbargphWgt3.bargph" customType="Bargraph">
+    <wgtStyle width="75" x="41" y="0" cx="37.97" cy="50.03" height="100"/>
+    <links>
+     <attr attrName="min" alias="BargraphWgt.min;ScaleWgt.min;LabelsWgt.min"/>
+     <attr attrName="max" alias="BargraphWgt.max;ScaleWgt.max;LabelsWgt.max"/>
+     <attr attrName="visibility2" alias="TicksWgt.visibility2;ScaleWgt.visibility2;LabelsWgt.visibility2"/>
+     <attr attrName="align" alias="TicksWgt.align;ScaleWgt.align;LabelsWgt.align"/>
+     <attr attrName="autoAdjust" alias="TicksWgt.autoAdjust;LabelsWgt.autoAdjust"/>
+     <attr attrName="reverseScale" alias="BargraphWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.reverseScale"/>
+     <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+    </links>
+    <object class="LabelsWgt" id="tankbargphWgt3.bargph.lbls">
+     <wgtStyle font-family="Roboto" font-sizepx="11" cx="40.91" showThousandSeparator="false" startAngle="-20" cy="16.24" step="1" timeSpec="local" endAngle="185" x="-1" y="0" visibility="false" rotated="true" vert-align="top" text="" max="12000" usingFormat="" value="" keypad-type="None" min="0" width="80" labelNames="" numberFormat="1" readWrite="true" tickFreq="4" height="103" labelFreq="5000" form="horizontal" font-size="0"/>
+    </object>
+    <object class="ScaleWgt" id="tankbargphWgt3.bargph.scale" static="true">
+     <wgtStyle alarmMin="9600" cx="29.59" startAngle="-20" cy="31.77" reverseScale="false" endAngle="185" x="4" y="14" visibility="false" max="12000" autoAdjust="true" stroke-width="6" width="65" Color="none" fill="none" size="99" alarmMax="12000" height="73" stroke="rgb(255,0,0)" form="horizontal"/>
+    </object>
+    <object class="TicksWgt" id="tankbargphWgt3.bargph.ticks" static="true">
+     <wgtStyle cx="32.97" startAngle="-10" cy="38.97" endAngle="200" reverseScale="true" tickSize2="6" x="4" y="12" visibility="false" max="10" width="65" stroke-linecap="butt" tickSize="6" tickFreq="5000" height="77" labelFreq="5000" form="horizontal" frame="1"/>
+    </object>
+    <object class="BargraphWgt" hmiStyle="hmi-type:*barh" id="tankbargphWgt3.bargph.bar">
+     <wgtStyle width="65" reverseScale="false" x="3" forcePaint="73" y="23" fill="rgb(255,215,0)" cx="32.97" form="vertical" cy="20.46" height="40" value="5" max="12000" color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink attribute="value" sourceType="Formula">
+       <xForms>
+        <xForm colorPalette="" class="FormulaXForm" expression="((11.788*$('Dieseltank'))-731.31)" compiledExpression="((11.788*$0)-731.31)" name="Formula">
+         <dataLinks>
+          <dataLink readWrite="R" tagType="short" attribute="$0" tag="Dieseltank" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+         </dataLinks>
+        </xForm>
+       </xForms>
+      </dataLink>
+     </dataLinks>
+    </object>
+   </object>
+   <object class="ImageWgt" id="tankbargphWgt3.glassImg">
+    <wgtStyle width="89" imagePath="images/TankGlass2.svg" x="23" forcePaint="65" y="22" cx="44.50" cy="21.50" height="43"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label3">
+   <wgtStyle width="417" font-color="rgb(23,30,40)" x="517" forcePaint="16" font-sizepx="26" y="478" enableLiveTags="true" font-family="Roboto" wrapping="true" cx="193.24" cy="65.37" wgtStaticOpt="dynamic" height="138" vert-align="top" marker="true" keypad-type="None" font-size="20"/>
+   <links>
+    <lang class="MLTextLink" textid="4"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field2">
+   <wgtStyle forcePaint="9" font-family="Roboto" font-sizepx="26" cx="52.44" showThousandSeparator="false" cy="23.99" step="1" timeSpec="local" alignment="right" x="460" y="209.68" vert-align="top" text="99999" max="32767" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="114" numberFormat="1" height="53.32" form="Numeric" font-size="20"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="value" tag="UrenPomp1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="NumericWgt" id="field3">
+   <wgtStyle forcePaint="9" font-family="Roboto" font-sizepx="26" cx="52.44" showThousandSeparator="false" cy="23.99" step="1" timeSpec="local" alignment="right" x="460" y="263" vert-align="top" text="99999" max="127" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="114" numberFormat="1" height="53.32" form="Numeric" font-size="20"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="int" attribute="value" tag="Urenpomp2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="BtnIllum1" customType="Button With Light">
+   <wgtStyle width="235" x="1017.69" y="12.74" cx="117.50" cy="98.47" height="196.94"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnIllum1.frmImg" static="true">
+    <wgtStyle width="235" imagePath="images/frame_rect_chrome.svg" x="0" y="0" bdrImageSize="57.00,52.00" cx="115.42" cy="98.47" bdrSize="0.19,0.19,0.18,0.19" height="196.94" bdrEdges="0.13,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnIllum1.btn">
+    <wgtStyle width="171.73" x="31.63" y="26.51" bdrImageSize="42.00,38.00" fill="rgb(120,120,120)" cx="81.80" form="standard" cy="64.38" height="143.92" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" actionID="0" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="testErrorAqua" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnIllum1.lbl">
+    <wgtStyle width="176.25" font-color="rgb(255,255,0)" x="27.12" forcePaint="1" font-sizepx="21" y="71.96" font-family="Roboto" wrapping="true" cx="107.92" cy="58.40" height="90.90" alignment="center" vert-align="middle" keypad-type="None" font-size="16"/>
+    <links>
+     <lang class="MLTextLink" textid="5"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="BtnIllum1.icoImg" static="true">
+    <wgtStyle width="99.42" x="67.79" y="79.53" cx="49.71" cy="30.30" height="68.17"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="type:light" id="BtnIllum1.ind">
+    <wgtStyle width="54.23" imagePath="images/li_inset_round.svg" x="131.06" forcePaint="9" y="34.09" cx="20.52" cy="17.08" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="45.45" stroke="rgb(255,255,255)" stroke-width="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="testErrorAqua" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+  </object>
+ </object>
+</wgtPage>
